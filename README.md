@@ -1,6 +1,6 @@
 # 🍽️ Menú de Restaurante - Django
 
-Este es un proyecto web desarrollado con Django que permite gestionar el menú de un restaurante de forma sencilla. Básicamente, es una aplicación CRUD donde puedes agregar, ver, editar y eliminar platos.
+Este es un proyecto web desarrollado con Django que permite gestionar el menú de un restaurante de forma sencilla. Básicamente, es una aplicación CRUD donde puedes agregar, ver, editar y eliminar platos, como extra posee un módulo de pagos.
 
 ---
 
@@ -12,6 +12,7 @@ La aplicación permite:
 - 📋 Ver todos los platos registrados  
 - ✏️ Editar información de un plato  
 - ❌ Eliminar platos  
+- 💵 Simular pagos de platos
 
 Todo esto desde una interfaz web sencilla y amigable.
 
@@ -47,3 +48,5 @@ Todo esto desde una interfaz web sencilla y amigable.
 * Formularios simples y funcionales
 
 * Confirmación al eliminar
+
+* Simular Pagos
