@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Plato
+from .models import Plato, Pago
 
 # LISTAR
 def lista_platos(request):
@@ -32,3 +32,17 @@ def editar_plato(request, id):
         plato.save()
         return redirect('lista')
     return render(request, 'editar.html', {'plato': plato})
+
+# PAGOS
+def pagar_plato(request, id):
+    plato = Plato.objects.get(id=id)
+    if request.method == 'POST':
+        nombre_cliente = request.POST['nombre']
+        metodo_pago = request.POST['metodo']
+        Pago.objects.create(
+            plato=plato, 
+            nombre_cliente = nombre_cliente, 
+            metodo_pago=metodo_pago
+            )
+        return render (request, 'confirmacion.html', {'plato': plato})
+    return render(request, 'pago.html', {'plato': plato})

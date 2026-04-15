@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="text-center">
+    <div class="card p-4 shadow">
+        <h2 class="text-success">✅ Pago realizado</h2>
+
+        <p>Has pagado correctamente el plato:</p>
+        <h4>{{ plato.nombre }}</h4>
+
+        <a href="/" class="btn btn-primary mt-3">Volver al menú</a>
+    </div>
+</div>
+
+{% endblock %}

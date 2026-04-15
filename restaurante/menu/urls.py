@@ -6,4 +6,5 @@ urlpatterns = [
     path('crear/', views.crear_plato, name='crear'),
     path('eliminar/<int:id>/', views.eliminar_plato, name='eliminar'),
     path('editar/<int:id>/', views.editar_plato, name='editar'),
+    path('pagar/<int:id>/', views.pagar_plato, name='pagar'),
 ]
